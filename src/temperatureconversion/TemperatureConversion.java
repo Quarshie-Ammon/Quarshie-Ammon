@@ -18,13 +18,14 @@ public class TemperatureConversion {
     public static void main(String[] args) {
         // TODO code application logic here
         int degCelsius, degFahrenheit;
+        double numerator = 9.0 , denominator = 5.0;
         
         Scanner keyboard = new Scanner(System.in);
         
         System.out.println("input your temperature in degrees Celsius: ");
         degCelsius = keyboard.nextInt();
         
-        degFahrenheit = (int)(9 / 5) * degCelsius + 32;
+        degFahrenheit = (int) ((numerator / denominator) * degCelsius + 32);
         
         System.out.println("The temperature in Fahrenheit is " + degFahrenheit);
     }
